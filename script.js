@@ -18,9 +18,9 @@ const startPauseBt = document.querySelector('#start-pause')
 
 
 //Musicas
-const musicaFoco = new Audio('/sons/NCTSong.mp3')
-const musicaCurto = new Audio('/sons/ExoSong.mp3')
-const musicaLongo = new Audio('/sons/GfriendSong.mp3')
+const musicaFoco = new Audio('/sons/GfriendSong.mp3')
+//const musicaCurto = new Audio('/sons/ExoSong.mp3')
+//const musicaLongo = new Audio('/sons/NCTSong.mp3')
 const audioPlay = new Audio('/sons/play.wav');
 const audioPausar = new Audio('/sons/pause.mp3');
 const audioTempoFinalizado = new Audio('./sons/beep.mp3')
@@ -34,11 +34,11 @@ musicaFoco.loop = true
 //musicaCurto.loop = true
 //musicaLongo.loop = true
 
-musicaLongoInput.addEventListener('change', () =>{
-    if(musicaLongo.paused) {
-        musicaLongo.play()
+musicaFocoInput.addEventListener('change', () =>{
+    if(musicaFoco.paused) {
+        musicaFoco.play()
     } else {
-        musicaLongo.pause()
+        musicaFoco.pause()
     }
 })
 
